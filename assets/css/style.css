@@ -237,3 +237,56 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/*media query goes here per instructions*/
+
+@media screen and (max-width: 980px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 640px) {
+
+
+  #masthead {
+    position: static;
+  }
+
+  #logo {
+    width: 100%;
+  }
+
+  #main-container {
+    padding-top: 20px;
+  }
+
+  .main-section {
+    padding-top: 10px;
+
+  }
+
+  .container {
+    width: 100%;
+  }
+  nav {
+    float: none;
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+
+  }
+
+  nav a {
+    padding-top: 25px;
+    padding-left: 30px;
+    line-height: 25px;
+  }
+
+  .sidebar {
+
+    margin: 0 0 40px;
+    max-width: 100%;
+  }
+
+  #connect {}
+
+}
