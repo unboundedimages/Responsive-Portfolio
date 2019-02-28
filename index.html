@@ -1,459 +1,600 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Coming Soon</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<style type="text/css">
-	/*body {*/
-    /*background: linear-gradient(90deg, white, gray);*/
-    /*  background-color: #eee;*/
-    /*}*/
-body{
-    position:relative;
-    color: #37a0bb;/*teal blue for darkmode option*/
-    color: #2f3334;/*grey-black*/
-}
-body, h1, p {
-  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Coming Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      /*body {*/
+      /*background: linear-gradient(90deg, white, gray);*/
+      /*  background-color: #eee;*/
+      /*}*/
+      body {
+        position: relative;
+        color: #37a0bb; /*teal blue for darkmode option*/
+        color: #2f3334; /*grey-black*/
+      }
+      body,
+      h1,
+      p {
+        font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial,
+          "Lucida Grande", sans-serif;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
 
-#about-me {
-    padding-top:50px;
-    padding-bottom:50px;
-    height:431px;
-    text-align:center;
-}
+      #about-me {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 431px;
+        text-align: center;
+      }
 
-#portfolio {
-    padding-top:50px;
-    height:auto;
-}
+      #portfolio {
+        padding-top: 50px;
+        height: auto;
+      }
 
-#experience {
-    padding-top:50px;
-    height:auto;
-}
+      #experience {
+        padding-top: 50px;
+        height: auto;
+      }
 
-#resume {
-    padding-top:50px;
-    height:500px;
-}
+      #resume {
+        padding-top: 50px;
+        height: 500px;
+      }
 
-#contact {
-    padding-top:50px;
-    height:500px;
-}
+      #contact {
+        padding-top: 50px;
+        height: 500px;
+      }
 
-.affix {
-    /*position:fixed;*/
-    top: 0;
-    width: 100%;
-    z-index: 9999 !important;
-  }
+      .affix {
+        /*position:fixed;*/
+        top: 0;
+        width: 100%;
+        z-index: 9999 !important;
+      }
 
-  .affix + .container-fluid {
-    padding-top: 40px;
-  }
-.jumbotron {
-    /*background-color: black;*/
-    color:white;
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
- /*   -webkit-background-clip: text;*/
-	/*-webkit-text-fill-color: transparent;*/
-	/*margin-bottom:0;*/
-	margin:0;
-	width: auto;
-}
-.navbar-inverse .navbar-nav>li>a:hover {
-    color: #ffeb00;
-    /* background-color: transparent; */
-}
-.navbar-inverse .navbar-nav>li>a {
-    color: #ffffff;
-}
-.navbar-inverse{
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-    border: none;
-    color:white;
-}
-.navbar {
-    border-radius: 0;
-    color:white;
-    margin:0;
-    /*width:101vw;*/
-}
-.navbar-inverse .navbar-collapse {
-    border: none; /*remove default border color*/
-}
+      .affix + .container-fluid {
+        padding-top: 40px;
+      }
+      .jumbotron {
+        /*background-color: black;*/
+        color: white;
+        background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+        /*   -webkit-background-clip: text;*/
+        /*-webkit-text-fill-color: transparent;*/
+        /*margin-bottom:0;*/
+        margin: 0;
+        width: auto;
+      }
+      .navbar-inverse .navbar-nav > li > a:hover {
+        color: #ffeb00;
+        /* background-color: transparent; */
+      }
+      .navbar-inverse .navbar-nav > li > a {
+        color: #ffffff;
+      }
+      .navbar-inverse {
+        background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+        border: none;
+        color: white;
+      }
+      .navbar {
+        border-radius: 0;
+        color: white;
+        margin: 0;
+        /*width:101vw;*/
+      }
+      .navbar-inverse .navbar-collapse {
+        border: none; /*remove default border color*/
+      }
 
-.container {
-  margin-left:  0;
-  margin-right:  0;
-  margin-top: 117px;
-  max-width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
+      .container {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 117px;
+        max-width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
 
-.row:before, .row:after {
-  display: table;
-  content: " ";
-}
+      .row:before,
+      .row:after {
+        display: table;
+        content: " ";
+      }
 
-h1 {
-  font-size: 48px;
-  font-weight: 300;
-  margin: 0 0 20px 0;
-}
+      h1 {
+        font-size: 48px;
+        font-weight: 300;
+        margin: 0 0 20px 0;
+      }
 
-.lead {
-  font-size: 21px;
-  font-weight: 200;
-  margin-bottom: 20px;
-}
+      .lead {
+        font-size: 21px;
+        font-weight: 200;
+        margin-bottom: 20px;
+      }
 
-p {
-  margin: 0 0 10px;
-}
+      p {
+        margin: 0 0 10px;
+      }
 
-a {
-  color: #3282e6;
-  text-decoration: none;
-}
+      a {
+        color: #3282e6;
+        text-decoration: none;
+      }
 
-.usmc {
-    width:215px;
-    height:auto;
-}
-/*popup modal*/
-.modal-full {
-    min-width: 100%;
-    margin: 0;
-}
+      .usmc {
+        width: 215px;
+        height: auto;
+      }
+      /*popup modal*/
+      .modal-full {
+        min-width: 100%;
+        margin: 0;
+      }
 
-.modal-full .modal-content {
-    min-height: 100vh;
-}
+      .modal-full .modal-content {
+        min-height: 100vh;
+      }
 
-.port-Cards {
-    padding-bottom: 30px;
-}
-	</style>
-</head>
-<body data-offset="50" data-spy="scroll" data-target=".navbar">
-
-
-<nav class="navbar navbar-inverse" data-offset-top="197" data-spy="affix">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      .port-Cards {
+        padding-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body data-offset="50" data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-inverse" data-offset-top="197" data-spy="affix">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target="#myNavbar"
+        >
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-    </div>
-    <div>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-            	<li ><a href="#about-me">About Me</a></li>
-            	<li><a href="#portfolio">Portfolio</a></li>
-            	<li><a href="#experience">Experience</a></li>
-            	<li><a href="#resume">Resume</a></li>
-            	<li><a href="#contact">Contact</a></li>
-            </ul>
+          <ul class="nav navbar-nav">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </div>  
-</nav>
-<div class="jumbotron text-center">
-    <h1>rodROSS</h1>
-    <p style="text-transform: uppercase;">Full Stack Web Developer</p>
-</div>
-<div class="container-fluid">
-    <div class="row">
+      </div>
+    </nav>
+    <div class="jumbotron text-center">
+      <h1>rodROSS</h1>
+      <p style="text-transform: uppercase;">Full Stack Web Developer</p>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
         <div class="col-xs-12" style="text-transform: uppercase;" id="about-me">
-            
-            <div class="col-xs-12">
-                <img style="max-width:100px; border-radius:105px 32px 121px 0px; padding-bottom:30px; padding-top:30px;" src="img/rod.jpg"/>
-            </div>
-            <h2 style="font-size: 40px;">
-                About Me
-            </h2>
-            <div style="padding-top:20px">
-                <p class="col-xs-12">
-                    <i style="text-align:center">
-                        <!--Courage is not setting foot into the ocean, -->
-                        <!--it&#39;s losing sight of the shore.-->
-                        <strong>
-                            Have the courage to lose sight of the shore...
-                        </strong>
-                    </i>
-                </p>
-            </div>
+          <div class="col-xs-12">
+            <img
+              style="max-width:100px; border-radius:105px 32px 121px 0px; padding-bottom:30px; padding-top:30px;"
+              src="img/rod.jpg"
+            />
+          </div>
+          <h2 style="font-size: 40px;">
+            About Me
+          </h2>
+          <div style="padding-top:20px">
+            <p class="col-xs-12">
+              <i style="text-align:center">
+                <!--Courage is not setting foot into the ocean, -->
+                <!--it&#39;s losing sight of the shore.-->
+                <strong>
+                  Have the courage to lose sight of the shore...
+                </strong>
+              </i>
+            </p>
+          </div>
         </div>
-    </div>
-    
-    <div class="row">
+      </div>
+
+      <div class="row">
         <div class="col-xs-12" style="height:200px;">
-            <img class="col-xs-2" style="width:175px;height:auto;" src="img/ega.gif" />
-            <div class="col-sm-3" style="text-align:left;">
-                <h4>
-                    January 1997- 
-                    <div>
-                        October 1999  
-                    </div>
-                </h4>
-                <h4>
-                    The big step.
-                </h4>
-            </div>
+          <img
+            class="col-xs-2"
+            style="width:175px;height:auto;"
+            src="img/ega.gif"
+          />
+          <div class="col-sm-3" style="text-align:left;">
+            <h4>
+              January 1997-
+              <div>
+                October 1999
+              </div>
+            </h4>
+            <h4>
+              The big step.
+            </h4>
+          </div>
           <div class="col-sm-8">
-              <div style="text-align:justify; max-width:400px">
-                 I was 4 years removed from highschool and realized I craved more for myself.  I heard there were some people looking for a few good men. The moment I stepped on those yellow foot prints at Paris Island, I would be forever changed.  The journey began and seed was planted for coding.
-              </div>
-          </div>  
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-xs-12" style="height:250px; padding-top:70px; margin-bottom:30px">
-            <img class="col-xs-2" style="width:175px;height:auto;" src="img/hamster.png" />
-             <div class="col-sm-3" style="text-align:left;">
-                <h4>
-                    January 2000- 
-                    <div>
-                        October 2005  
-                    </div>
-                </h4>
-                <h4>
-                    Nowhere fast?  Perspective
-                </h4>
+            <div style="text-align:justify; max-width:400px">
+              I was 4 years removed from highschool and realized I craved more
+              for myself. I heard there were some people looking for a few good
+              men. The moment I stepped on those yellow foot prints at Paris
+              Island, I would be forever changed. The journey began and seed was
+              planted for coding.
             </div>
-            <div class="col-sm-8">
-              <div style="text-align:justify; max-width:400px">
-                  As a newly discharged disabled veteran, there weren't many opportunities for my skillset. I took what I could find in customer service as a savvy retention specialist. Eventually, if landed a contract job doing helpdesk, but he ceilings were very low. Eventually the contract ended and it was time to find new challenges.
-              </div>
-          </div> 
+          </div>
         </div>
-    </div>
-    
-    <div class="row">
+      </div>
+
+      <div class="row">
+        <div
+          class="col-xs-12"
+          style="height:250px; padding-top:70px; margin-bottom:30px"
+        >
+          <img
+            class="col-xs-2"
+            style="width:175px;height:auto;"
+            src="img/hamster.png"
+          />
+          <div class="col-sm-3" style="text-align:left;">
+            <h4>
+              January 2000-
+              <div>
+                October 2005
+              </div>
+            </h4>
+            <h4>
+              Nowhere fast? Perspective
+            </h4>
+          </div>
+          <div class="col-sm-8">
+            <div style="text-align:justify; max-width:400px">
+              As a newly discharged disabled veteran, there weren't many
+              opportunities for my skillset. I took what I could find in
+              customer service as a savvy retention specialist. Eventually, if
+              landed a contract job doing helpdesk, but he ceilings were very
+              low. Eventually the contract ended and it was time to find new
+              challenges.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
         <div class="col-xs-12" style="height:250px; padding-top:70px;">
-            <img class="col-xs-2" style="width:175px;height:auto;padding-bottom:50px;" src="img/Piedmont_Airlines.png" />
-            <div class="col-sm-3" style="text-align:left;">
-                <h4>
-                    January 2005- 
-                    <div>
-                        October 2011  
-                    </div>
-                </h4>
-                <h4>
-                    Zero to lift off!
-                </h4>
-            </div>
-            <div class="col-sm-8">
-              <div style="text-align:justify; max-width:400px">
-                  I coached wrestling, football and baseball at Phillip O'Berry Academy 
-                  and found great purpose in shaping the scope and vision of young men and future leaders for 5 years. 
-                  That lead to an opportunity to work for Piedmont Airlines. 
-                  I was able to travel the globe and be exposed to other cultures. 
-                  I truly value that time in my life. 
+          <img
+            class="col-xs-2"
+            style="width:175px;height:auto;padding-bottom:50px;"
+            src="img/Piedmont_Airlines.png"
+          />
+          <div class="col-sm-3" style="text-align:left;">
+            <h4>
+              January 2005-
+              <div>
+                October 2011
               </div>
-          </div> 
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-xs-12" style="height:250px; padding-top:70px; margin-bottom:30px;">
-            <img class="col-xs-2" style="width:175px;height:auto;" src="img/camera.png" />
-            <div class="col-sm-3" style="text-align:left;">
-                <h4>
-                    November 2011- 
-                    <div>
-                    October 2017  
-                    </div>
-                </h4>
-                <h4>
-                    Lights Camera Reincarnation!
-                </h4>
+            </h4>
+            <h4>
+              Zero to lift off!
+            </h4>
+          </div>
+          <div class="col-sm-8">
+            <div style="text-align:justify; max-width:400px">
+              I coached wrestling, football and baseball at Phillip O'Berry
+              Academy and found great purpose in shaping the scope and vision of
+              young men and future leaders for 5 years. That lead to an
+              opportunity to work for Piedmont Airlines. I was able to travel
+              the globe and be exposed to other cultures. I truly value that
+              time in my life.
             </div>
-            <div class="col-sm-8">
-              <div style="text-align:justify; max-width:400px;">
-                  I went from a hobbiest to a freelancer in a click.  
-                  Photography taught me the planning, composition, color theory, lighting and how to choose the right subject. 
-                  My pictures helped models get agency represenation and gigs - including my son.  
-                  He's done commercial print work for recognized brands such as Belks. 
-                  Showing always speaks more than telling.
-              </div>
-          </div> 
+          </div>
         </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-xs-12" style="height:350px; padding-top:70px; margin-bottom:50px">
-            <img class="col-xs-2" style="width:175px;height:auto;" src="img/49er.png" />
-            <div class="col-sm-3" style="text-align:left;">
-                <h4>
-                    October 2017- 
-                    <div>
-                        February 2018  
-                    </div>
-                </h4>
-                <h4>
-                    Lets talk commitment!
-                </h4>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-xs-12"
+          style="height:250px; padding-top:70px; margin-bottom:30px;"
+        >
+          <img
+            class="col-xs-2"
+            style="width:175px;height:auto;"
+            src="img/camera.png"
+          />
+          <div class="col-sm-3" style="text-align:left;">
+            <h4>
+              November 2011-
+              <div>
+                October 2017
+              </div>
+            </h4>
+            <h4>
+              Lights Camera Reincarnation!
+            </h4>
+          </div>
+          <div class="col-sm-8">
+            <div style="text-align:justify; max-width:400px;">
+              I went from a hobbiest to a freelancer in a click. Photography
+              taught me the planning, composition, color theory, lighting and
+              how to choose the right subject. My pictures helped models get
+              agency represenation and gigs - including my son. He's done
+              commercial print work for recognized brands such as Belks. Showing
+              always speaks more than telling.
             </div>
-            <div class="col-sm-8">
-              <div style="text-align:justify; max-width:400px;">
-                  The photography industry changed as cellphones replaced the need for certain types of photography. 
-                  It was time for a new direction.  Except it was more like coming home full circle.  
-                  No yellow footprints this time. I found myself in a different kind of bootcamp that required complete commitment. 
-                  February 2018, I successfully completed the coding bootcamp offered at UNC-Charlotte.  
-                  From Hello World to making fire in 90 days. 
-              </div>
-          </div> 
+          </div>
         </div>
-    </div>
-    
-    <div class="row">
+      </div>
+
+      <div class="row">
+        <div
+          class="col-xs-12"
+          style="height:350px; padding-top:70px; margin-bottom:50px"
+        >
+          <img
+            class="col-xs-2"
+            style="width:175px;height:auto;"
+            src="img/49er.png"
+          />
+          <div class="col-sm-3" style="text-align:left;">
+            <h4>
+              October 2017-
+              <div>
+                February 2018
+              </div>
+            </h4>
+            <h4>
+              Lets talk commitment!
+            </h4>
+          </div>
+          <div class="col-sm-8">
+            <div style="text-align:justify; max-width:400px;">
+              The photography industry changed as cellphones replaced the need
+              for certain types of photography. It was time for a new direction.
+              Except it was more like coming home full circle. No yellow
+              footprints this time. I found myself in a different kind of
+              bootcamp that required complete commitment. February 2018, I
+              successfully completed the coding bootcamp offered at
+              UNC-Charlotte. From Hello World to making fire in 90 days.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
         <!--<div class="col-xs-12" style="height:250px; padding-top:70px;-->
         <!--background-image: -webkit-linear-gradient(top left,  #30CFD0 0%, #330867 100%);-->
         <!---webkit-background-clip: text;-webkit-text-fill-color: transparent;">-->
-        <div class="col-xs-12" style="padding-top: 70px; background-image: -webkit-linear-gradient(top left,  #30CFD0 0%, #330867 100%);">
-    	   <div id="portfolio">
-                <h2 style="font-size: 40px; color:white; padding-bottom:130px;">
-                    portFOLIO
-                </h2>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <a href="#myModal" data-toggle="modal"><img class="col-sm-3" style="max-width:300px;" src="img/carobidform.png"></a>
-                        <a href="#myModal2" data-toggle="modal"><img class="col-sm-3" style="max-width:300px;" src="img/flashcard.png"></a>
-                        <a href="#myModal3" data-toggle="modal"><img class="col-sm-3" style="max-width:300px;" src="img/uiashley.png"></a>
-                        <a href="#myModal3" data-toggle="modal"><img class="col-sm-3" style="max-width:300px;" src="img/unboundedimages.png"></a>
-                    </div>
-                </div>
+        <div
+          class="col-xs-12"
+          style="padding-top: 70px; background-image: -webkit-linear-gradient(top left,  #30CFD0 0%, #330867 100%);"
+        >
+          <div id="portfolio">
+            <h2 style="font-size: 40px; color:white; padding-bottom:130px;">
+              portFOLIO
+            </h2>
+            <div class="row">
+              <div class="col-sm-12">
+                <a href="#myModal" data-toggle="modal"
+                  ><img
+                    class="col-sm-3"
+                    style="max-width:300px;"
+                    src="img/carobidform.png"
+                /></a>
+                <a href="#myModal2" data-toggle="modal"
+                  ><img
+                    class="col-sm-3"
+                    style="max-width:300px;"
+                    src="img/flashcard.png"
+                /></a>
+                <a href="#myModal3" data-toggle="modal"
+                  ><img
+                    class="col-sm-3"
+                    style="max-width:300px;"
+                    src="img/uiashley.png"
+                /></a>
+                <a href="#myModal3" data-toggle="modal"
+                  ><img
+                    class="col-sm-3"
+                    style="max-width:300px;"
+                    src="img/unboundedimages.png"
+                /></a>
+              </div>
             </div>
-            
-            <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-full" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header" style="height:250px">
-                            <h3 class="modal-title col-xs-11" style="padding-top: 75px;text-align:center;">Caro Bid Form</h3>
-                            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                            <!--    <span aria-hidden="true">×</span>-->
-                            <!--</button>-->
-                            <span aria-hidden="true">
-                            <a class="btn-secondary col-xs-1" data-dismiss="modal" style="margin-top:70px; text-align:center; font-size:30px; cursor:pointer;"> &times;</a>
-                            </span>
-                        </div>
-                        <div class="modal-body p-4" id="result">
-                                <!--<p>The grid inside the modal is responsive too..</p>-->
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="col-xs-3"></div>
-                                        <a href="https://www.carobids.com" target="_blank">
-                                            <img class="col-xs-6" style="max-width:600px;min-width:400px; padding-right:30px;" src ="img/carobidform.png">
-                                        </a>
-                                        <div class="col-xs-3"></div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="modal-footer">
-                            <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
-                        </div>
-                    </div>
+          </div>
+
+          <div
+            class="modal"
+            id="myModal"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-full" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="height:250px">
+                  <h3
+                    class="modal-title col-xs-11"
+                    style="padding-top: 75px;text-align:center;"
+                  >
+                    Caro Bid Form
+                  </h3>
+                  <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                  <!--    <span aria-hidden="true">×</span>-->
+                  <!--</button>-->
+                  <span aria-hidden="true">
+                    <a
+                      class="btn-secondary col-xs-1"
+                      data-dismiss="modal"
+                      style="margin-top:70px; text-align:center; font-size:30px; cursor:pointer;"
+                    >
+                      &times;</a
+                    >
+                  </span>
                 </div>
-            </div>
-            
-            <div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-full" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header" style="height:250px">
-                            <span aria-hidden="true">
-                                <div class="col-xs-10"></div>
-                                <a class="btn-secondary col-xs-1" data-dismiss="modal" 
-                                style="margin-top:70px; text-align:right; max-width:0;font-size:35px; cursor:pointer;">
-                                     &times;
-                                </a>
-                            </span>
-                            <h2 class="modal-title col-xs-12" style="padding-top:15px;text-transform: uppercase;">
-                                Flashcard Fun
-                            </h2>
-                            
-                            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                            <!--    <span aria-hidden="true">×</span>-->
-                            <!--</button>-->
-                            
-                            <p class="modal-title col-xs-12">
-                                <i style="color:#8e9091">
-                                    A fun game that helps build multiplication logic.
-                                </i>
-                            </p>
-                        </div>
-                        <div class="modal-body p-4" id="result">
-                            <div class="row">
-                                <div class="col-xs-12" style="padding-left: 0; padding-right: 0;margin: 0;">
-                                    <div class="col-xs-1"></div>
-                                    <a href="https://flashcardfun.herokuapp.com" target="_blank">
-                                        <img class="col-xs-10" src ="img/flashcard.png">
-                                    </a>
-                                    <div class="col-xs-1"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="col-xs-12">
-                                <div class="col-xs-1"></div>
-                                <div class="col-xs-10" style="text-align:justify;">
-                                 I made this fun app to teach my small children how to multiply. 
-                            Instead of having index cards all over the floor, 
-                            this both taught them how to mulitply and keep our livingroom floor clean.
-                            <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
-                                </div>
-                                <div class="col-xs-1"></div>
-                            </div>
-                        </div>
+                <div class="modal-body p-4" id="result">
+                  <!--<p>The grid inside the modal is responsive too..</p>-->
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="col-xs-3"></div>
+                      <a href="https://www.carobids.com" target="_blank">
+                        <img
+                          class="col-xs-6"
+                          style="max-width:600px;min-width:400px; padding-right:30px;"
+                          src="img/carobidform.png"
+                        />
+                      </a>
+                      <div class="col-xs-3"></div>
                     </div>
+                  </div>
                 </div>
+                <div class="modal-footer">
+                  <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
+                </div>
+              </div>
             </div>
-            
-            <div class="modal" id="myModal3" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-full" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header" style="height:250px">
-                            <h3 class="modal-title col-xs-11" style="padding-top: 75px;text-align:center;">Flashcard Fun</h3>
-                            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                            <!--    <span aria-hidden="true">×</span>-->
-                            <!--</button>-->
-                            <span aria-hidden="true">
-                            <a class="btn-secondary col-xs-1" data-dismiss="modal" style="margin-top:70px; text-align:center; font-size:30px; cursor:pointer;"> &times;</a>
-                            </span>
-                        </div>
-                        <div class="modal-body p-4" id="result">
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="col-xs-3"></div>
-                                        <a href="https://unboundedimages.com/monochrome" target="_blank">
-                                            <img class="col-xs-6" style="max-width:600px;min-width:400px; padding-right:30px;" src ="img/unboundedimages.png">
-                                        </a>
-                                        <div class="col-xs-3"></div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="modal-footer">
-                            <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
-                        </div>
+          </div>
+
+          <div
+            class="modal"
+            id="myModal2"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-full" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="height:250px">
+                  <span aria-hidden="true">
+                    <div class="col-xs-10"></div>
+                    <a
+                      class="btn-secondary col-xs-1"
+                      data-dismiss="modal"
+                      style="margin-top:70px; text-align:right; max-width:0;font-size:35px; cursor:pointer;"
+                    >
+                      &times;
+                    </a>
+                  </span>
+                  <h2
+                    class="modal-title col-xs-12"
+                    style="padding-top:15px;text-transform: uppercase;"
+                  >
+                    Flashcard Fun
+                  </h2>
+
+                  <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                  <!--    <span aria-hidden="true">×</span>-->
+                  <!--</button>-->
+
+                  <p class="modal-title col-xs-12">
+                    <i style="color:#8e9091">
+                      A fun game that helps build multiplication logic.
+                    </i>
+                  </p>
+                </div>
+                <div class="modal-body p-4" id="result">
+                  <div class="row">
+                    <div
+                      class="col-xs-12"
+                      style="padding-left: 0; padding-right: 0;margin: 0;"
+                    >
+                      <div class="col-xs-1"></div>
+                      <a
+                        href="https://flashcardfun.herokuapp.com"
+                        target="_blank"
+                      >
+                        <img class="col-xs-10" src="img/flashcard.png" />
+                      </a>
+                      <div class="col-xs-1"></div>
                     </div>
+                  </div>
                 </div>
+                <div class="modal-footer">
+                  <div class="col-xs-12">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10" style="text-align:justify;">
+                      I made this fun app to teach my small children how to
+                      multiply. Instead of having index cards all over the
+                      floor, this both taught them how to mulitply and keep our
+                      livingroom floor clean.
+                      <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div
+            class="modal"
+            id="myModal3"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-full" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="height:250px">
+                  <h3
+                    class="modal-title col-xs-11"
+                    style="padding-top: 75px;text-align:center;"
+                  >
+                    Flashcard Fun
+                  </h3>
+                  <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                  <!--    <span aria-hidden="true">×</span>-->
+                  <!--</button>-->
+                  <span aria-hidden="true">
+                    <a
+                      class="btn-secondary col-xs-1"
+                      data-dismiss="modal"
+                      style="margin-top:70px; text-align:center; font-size:30px; cursor:pointer;"
+                    >
+                      &times;</a
+                    >
+                  </span>
+                </div>
+                <div class="modal-body p-4" id="result">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="col-xs-3"></div>
+                      <a
+                        href="https://unboundedimages.com/monochrome"
+                        target="_blank"
+                      >
+                        <img
+                          class="col-xs-6"
+                          style="max-width:600px;min-width:400px; padding-right:30px;"
+                          src="img/unboundedimages.png"
+                        />
+                      </a>
+                      <div class="col-xs-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
