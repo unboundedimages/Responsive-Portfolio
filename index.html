@@ -1,733 +1,1139 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Coming Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css"
+    />
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Coming Soon</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style type="text/css">
-    /*body {*/
-    /*background: linear-gradient(90deg, white, gray);*/
-    /*  background-color: #eee;*/
-    /*}*/
-    body {
-      position: relative;
-      color: #37a0bb;
-      /*teal blue for darkmode option*/
-      color: #2f3334;
-      /*grey-black*/
-    }
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      /*body {*/
+      /*background: linear-gradient(90deg, white, gray);*/
+      /*  background-color: #eee;*/
+      /*}*/
+      body {
+        position: relative;
+        color: #37a0bb;
+        /*teal blue for darkmode option*/
+        color: #2f3334;
+        /*grey-black*/
+      }
 
-    body,
-    h1,
-    p {
-      font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial,
-        "Lucida Grande", sans-serif;
-      font-weight: normal;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+      body,
+      h1,
+      p {
+        font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial,
+          "Lucida Grande", sans-serif;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
 
-    #about-me {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      height: 431px;
-      text-align: center;
-    }
+      #about-me {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 431px;
+        text-align: center;
+      }
 
-    #portfolio {
-      padding-top: 50px;
-      height: auto;
-    }
+      #portfolio {
+        padding-top: 50px;
+        height: auto;
+      }
 
-    #experience {
-      padding-top: 50px;
-      height: auto;
-    }
+      #experience {
+        padding-top: 50px;
+        height: auto;
+      }
 
-    #resume {
-      padding-top: 50px;
-      height: 500px;
-    }
+      #resume {
+        padding-top: 50px;
+        height: 500px;
+      }
 
-    #contact {
-      padding-top: 50px;
-      height: 500px;
-    }
+      #contact {
+        padding-top: 50px;
+        height: auto;
+        background-color: #254d6f;
+      }
 
-    .affix {
-      /*position:fixed;*/
-      top: 0;
-      width: 100%;
-      z-index: 9999 !important;
-    }
+      .affix {
+        /*position:fixed;*/
+        top: 0;
+        width: 100%;
+        z-index: 9999 !important;
+      }
 
-    .affix+.container-fluid {
-      padding-top: 40px;
-    }
+      .affix + .container-fluid {
+        padding-top: 40px;
+      }
 
-    .jumbotron {
-      /*background-color: black;*/
-      color: white;
-      background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
-      /*   -webkit-background-clip: text;*/
-      /*-webkit-text-fill-color: transparent;*/
-      /*margin-bottom:0;*/
-      margin: 0;
-      width: auto;
-    }
+      .jumbotron {
+        /*background-color: black;*/
+        color: white;
+        background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+        /*   -webkit-background-clip: text;*/
+        /*-webkit-text-fill-color: transparent;*/
+        /*margin-bottom:0;*/
+        margin: 0;
+        width: auto;
+      }
 
-    .navbar-inverse .navbar-nav>li>a:hover {
-      color: #ffeb00;
-      /* background-color: transparent; */
-    }
+      .navbar-inverse .navbar-nav > li > a:hover {
+        color: #ffeb00;
+        /* background-color: transparent; */
+      }
 
-    .navbar-inverse .navbar-nav>li>a {
-      color: #ffffff;
-    }
+      .navbar-inverse .navbar-nav > li > a {
+        color: #ffffff;
+      }
 
-    .navbar-inverse {
-      background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
-      border: none;
-      color: white;
-    }
+      .navbar-inverse {
+        background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+        border: none;
+        color: white;
+      }
 
-    .navbar {
-      border-radius: 0;
-      color: white;
-      margin: 0;
-      /*width:101vw;*/
-    }
+      .navbar {
+        border-radius: 0;
+        color: white;
+        margin: 0;
+        /*width:101vw;*/
+      }
 
-    .navbar-inverse .navbar-collapse {
-      border: none;
-      /*remove default border color*/
-    }
+      .navbar-inverse .navbar-collapse {
+        border: none;
+        /*remove default border color*/
+      }
 
-    .container {
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 117px;
-      max-width: 1170px;
-      padding-right: 15px;
-      padding-left: 15px;
-    }
+      .container {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 117px;
+        max-width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
 
-    .row:before,
-    .row:after {
-      display: table;
-      content: " ";
-    }
+      .row:before,
+      .row:after {
+        display: table;
+        content: " ";
+      }
 
-    h1 {
-      font-size: 48px;
-      font-weight: 300;
-      margin: 0 0 20px 0;
-    }
+      h1 {
+        font-size: 48px;
+        font-weight: 300;
+        margin: 0 0 20px 0;
+      }
 
-    .lead {
-      font-size: 21px;
-      font-weight: 200;
-      margin-bottom: 20px;
-    }
+      .lead {
+        font-size: 21px;
+        font-weight: 200;
+        margin-bottom: 20px;
+      }
 
-    p {
-      margin: 0 0 10px;
-    }
+      p {
+        margin: 0 0 10px;
+      }
 
-    a {
-      color: #3282e6;
-      text-decoration: none;
-    }
+      a {
+        color: #3282e6;
+        text-decoration: none;
+      }
 
-    .usmc {
-      width: 215px;
-      height: auto;
-    }
+      .usmc {
+        width: 215px;
+        height: auto;
+      }
 
-    /*popup modal*/
-    .modal-full {
-      min-width: 100%;
-      margin: 0;
-    }
+      /*popup modal*/
+      .modal-full {
+        min-width: 100%;
+        margin: 0;
+      }
 
-    .modal-full .modal-content {
-      min-height: 100vh;
-    }
+      .modal-full .modal-content {
+        min-height: 100vh;
+      }
 
-    .port-Cards {
-      padding-bottom: 30px;
-    }
+      .port-Cards {
+        padding-bottom: 30px;
+      }
 
-    .middle {
-      transition: .3s ease;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
-    }
+      .middle {
+        transition: 0.3s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
 
-    .card-img-top {
-      opacity: 1;
-      transition: .5s ease;
-      backface-visibility: hidden;
-    }
+      .card-img-top {
+        opacity: 1;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+      }
 
-    .card:hover .card-img-top {
-      opacity: 0.06;
-    }
-    
-    /*.container:hover: .card-img-top2{*/
-    /*  opacity: 0.4;*/
-    /*}*/
+      .card:hover .card-img-top {
+        opacity: 0.06;
+      }
 
-    .card:hover .middle {
-      opacity: 1;
-    }
+      /*.container:hover: .card-img-top2{*/
+      /*  opacity: 0.4;*/
+      /*}*/
 
-    .text {
-      /*background-color: #4CAF50;*/
-      /*color: #f6da84;*/
-      color: #ffebad;
-      font-size: 45px;
-      padding: 16px 32px;
-    }
-    
-    .text2 {
-      /*background-color: #4CAF50;*/
-      color: #efc3fa;
-      font-size: 45px;
-      padding: 16px 32px;
-    }
-    
-    .text3 {
-      /*background-color: #4CAF50;*/
-      color:#38a3bc;
-      font-size: 45px;
-      padding: 16px 32px;
-    }
-    
-    .text4 {
-      /*background-color: #4CAF50;*/
-      color:#9ec0c5;
-      font-size: 45px;
-      padding: 16px 32px;
-    }
-    
-  </style>
-</head>
+      .card:hover .middle {
+        opacity: 1;
+      }
 
-<body data-offset="50" data-spy="scroll" data-target=".navbar">
-  <nav class="navbar navbar-inverse" data-offset-top="197" data-spy="affix">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      .text {
+        /*background-color: #4CAF50;*/
+        /*color: #f6da84;*/
+        color: #ffebad;
+        font-size: 45px;
+        padding: 16px 32px;
+      }
+
+      .text2 {
+        /*background-color: #4CAF50;*/
+        color: #efc3fa;
+        font-size: 45px;
+        padding: 16px 32px;
+      }
+
+      .text3 {
+        /*background-color: #4CAF50;*/
+        color: #38a3bc;
+        font-size: 45px;
+        padding: 16px 32px;
+      }
+
+      .text4 {
+        /*background-color: #4CAF50;*/
+        color: #9ec0c5;
+        font-size: 45px;
+        padding: 16px 32px;
+      }
+
+      .btn-info {
+        /*background-color:black;*/
+        background-color: #3cafc2;
+        padding-left: 17px;
+        padding-right: 17px;
+        /*border-color: #27619b;*/
+      }
+      .btn-info:hover,
+      .btn-info:focus,
+      .btn-info:active,
+      .btn-info.active,
+      .open > .dropdown-toggle.btn-info {
+        background-color: #272f80;
+      }
+
+      @media (min-width: 458px) {
+        .nav > li {
+          position: relative;
+          display: inline-block;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-offset="50" data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-inverse" data-offset-top="197" data-spy="affix">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target="#myNavbar"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-    </div>
-  </nav>
-  <div class="jumbotron text-center">
-    <h1>rodROSS</h1>
-    <p style="text-transform: uppercase;">Full Stack Web Developer</p>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12" style="text-transform: uppercase;" id="about-me">
-        <div class="col-xs-12">
-          <img style="max-width:100px; border-radius:105px 32px 121px 0px; padding-bottom:30px; padding-top:30px;"
-            src="img/rod.jpg" />
-        </div>
-        <h2 style="font-size: 40px;">
-          About Me
-        </h2>
-        <div style="padding-top:20px">
-          <p class="col-xs-12">
-            <i style="text-align:center">
-              <!--Courage is not setting foot into the ocean, -->
-              <!--it&#39;s losing sight of the shore.-->
-              <strong>
-                Have the courage to lose sight of the shore...
-              </strong>
-            </i>
-          </p>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <div class="jumbotron text-center">
+      <h1>rodROSS</h1>
+      <p style="text-transform: uppercase;">Full Stack Web Developer</p>
     </div>
-
-    <div class="row" style="display:block;margin-left:auto; margin-right:auto; max-width: 1230px;">
-      <div class="col-xs-12" style="height:200px;">
-        <img class="col-xs-2" style="width:175px;height:auto;" src="img/ega1-1.gif" />
-        <div class="col-sm-3" style="text-align:left;">
-          <h4>
-            January 1997-
-            <div>
-              October 1999
-            </div>
-          </h4>
-          <h4>
-            The big step.
-          </h4>
-        </div>
-        <div class="col-sm-8">
-          <div style="text-align:justify;display:block;margin-left:auto; margin-right:auto; max-width: 1230px;">
-            I was 4 years removed from highschool and realized I craved more
-            for myself. I heard there were some people looking for a few good
-            men. The moment I stepped on those yellow foot prints at Paris
-            Island, I would be forever changed. The journey began and seed was
-            planted for coding.
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12" style="text-transform: uppercase;" id="about-me">
+          <div class="col-xs-12">
+            <img
+              style="max-width:100px; border-radius:105px 32px 121px 0px; padding-bottom:30px; padding-top:30px;"
+              src="img/rod.jpg"
+            />
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" style="display:block;margin-left:auto; margin-right:auto; max-width: 1230px;">
-      <div class="col-xs-12" style="height:200px;margin-top:75px;">
-        <img class="col-xs-2" style="width:175px;height:auto;" src="img/_Hamster.png" />
-        <div class="col-sm-3" style="text-align:left;">
-          <h4>
-            January 2000-
-            <div>
-              October 2005
-            </div>
-          </h4>
-          <h4>
-            Nowhere fast? Perspective
-          </h4>
-        </div>
-        <div class="col-sm-8">
-          <div style="text-align:justify;display:block;margin-left:auto; margin-right:auto; max-width: 1230px;">
-            As a newly discharged disabled veteran, there weren't many
-            opportunities for my skillset. I took what I could find in
-            customer service as a savvy retention specialist. Eventually, if
-            landed a contract job doing helpdesk, but he ceilings were very
-            low. Eventually the contract ended and it was time to find new
-            challenges.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" style="display:block;margin-left:auto; margin-right:auto; max-width: 1230px;">
-      <div class="col-xs-12" style="height:200px;margin-top:75px;">
-        <img class="col-xs-2" style="width:175px;height:auto;" src="img/_PLANE.gif" />
-        <div class="col-sm-3" style="text-align:left;">
-          <h4>
-            January 2005-
-            <div>
-              October 2011
-            </div>
-          </h4>
-          <h4>
-            Zero to lift off!
-          </h4>
-        </div>
-        <div class="col-sm-8">
-          <div style="text-align:justify;display:block;margin-left:auto; margin-right:auto; max-width: 1230px;">
-            I coached wrestling, football and baseball at Phillip O'Berry
-            Academy and found great purpose in shaping the scope and vision of
-            young men and future leaders for 5 years. That lead to an
-            opportunity to work for Piedmont Airlines. I was able to travel
-            the globe and be exposed to other cultures. I truly value that
-            time in my life.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" style="display:block;margin-left:auto; margin-right:auto; max-width: 1230px;">
-      <div class="col-xs-12" style="height:200px;margin-top:75px;">
-        <img class="col-xs-2" style="width:175px;height:auto;" src="img/camera.png" />
-        <div class="col-sm-3" style="text-align:left;">
-          <h4>
-            November 2011-
-            <div>
-              October 2017
-            </div>
-          </h4>
-          <h4>
-            Lights Camera Reincarnation!
-          </h4>
-        </div>
-        <div class="col-sm-8">
-          <div style="text-align:justify;display:block;margin-left:auto; margin-right:auto; max-width: 1230px;">
-            I became a freelance photographer and learned design fundamentals
-            such as composition, color theory, cultural significance and more. My pictures even helped models get
-            agency represenation and paid gigs - including my son. He's done commercials, print work and e-commerce for
-            brands such as Belks.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" style="display:block;margin-left:auto; margin-right:auto; max-width: 1230px;">
-      <div class="col-xs-12" style="height:200px;margin-top:75px;">
-        <img class="col-xs-2" style="width:175px;height:auto;" src="img/49er.png" />
-        <div class="col-sm-3" style="text-align:left;">
-          <h4>
-            October 2017-
-            <div>
-              February 2018
-            </div>
-          </h4>
-          <h4>
-            Lets talk commitment!
-          </h4>
-        </div>
-        <div class="col-sm-8">
-          <div style="text-align:justify;display:block;margin-left:auto; margin-right:auto; max-width: 1230px;">
-            The photography industry changed as cellphones replaced the need
-            for certain types of photography. It was time for a new direction.
-            Except it was more like coming home full circle. No yellow
-            footprints this time. I found myself in a different kind of
-            bootcamp that required complete commitment. February 2018, I
-            successfully completed the coding bootcamp offered at
-            UNC-Charlotte. From Hello World to making fire in 90 days.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" id="portfolio">
-      <!--<div class="col-xs-12" style="height:250px; padding-top:70px;-->
-      <!--background-image: -webkit-linear-gradient(top left,  #30CFD0 0%, #330867 100%);-->
-      <!---webkit-background-clip: text;-webkit-text-fill-color: transparent;">-->
-      <div class="col-xs-12"
-        style="margin-top:162px; padding-top: 50px; background-image: -webkit-linear-gradient(top left,  #30CFD0 0%, #330867 100%);">
-        <div>
-          <h2 style="font-size: 40px; color:white; padding-bottom:130px;padding-top: 100px;">
-            <i style="letter-spacing: 3px;">portFOLIO</i>
+          <h2 style="font-size: 40px;">
+            About Me
           </h2>
-          <div class="row" style="display:block;margin-left:auto; margin-right:auto; max-width: 1280px;">
-            <div class="col-sm-12">
+          <div style="padding-top:20px">
+            <p class="col-xs-12">
+              <i style="text-align:center">
+                <!--Courage is not setting foot into the ocean, -->
+                <!--it&#39;s losing sight of the shore.-->
+                <strong>
+                  Have the courage to lose sight of the shore...
+                </strong>
+              </i>
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div
+        class="row"
+        style="display:block;margin-left:auto; margin-right:auto; max-width: 1230px;"
+      >
+        <div class="col-xs-12" style="height:200px;">
+          <img
+            class="col-xs-2"
+            style="width:175px;height:auto;"
+            src="img/ega1-1.gif"
+          />
+          <div class="col-sm-3" style="text-align:left;">
+            <h4>
+              January 1997-
+              <div>
+                October 1999
+              </div>
+            </h4>
+            <h4>
+              The big step.
+            </h4>
+          </div>
+          <div class="col-sm-8">
+            <div
+              style="text-align:justify;display:block;margin-left:auto; margin-right:auto; max-width: 1230px;"
+            >
+              I was 4 years removed from highschool and realized I craved more
+              for myself. I heard there were some people looking for a few good
+              men. The moment I stepped on those yellow foot prints at Paris
+              Island, I would be forever changed. The journey began and seed was
+              planted for coding.
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div
+        class="row"
+        style="display:block;margin-left:auto; margin-right:auto; max-width: 1230px;"
+      >
+        <div class="col-xs-12" style="height:200px;margin-top:75px;">
+          <img
+            class="col-xs-2"
+            style="width:175px;height:auto;"
+            src="img/_Hamster.png"
+          />
+          <div class="col-sm-3" style="text-align:left;">
+            <h4>
+              January 2000-
+              <div>
+                October 2005
+              </div>
+            </h4>
+            <h4>
+              Nowhere fast? Perspective
+            </h4>
+          </div>
+          <div class="col-sm-8">
+            <div
+              style="text-align:justify;display:block;margin-left:auto; margin-right:auto; max-width: 1230px;"
+            >
+              As a newly discharged disabled veteran, there weren't many
+              opportunities for my skillset. I took what I could find in
+              customer service as a savvy retention specialist. Eventually, if
+              landed a contract job doing helpdesk, but he ceilings were very
+              low. Eventually the contract ended and it was time to find new
+              challenges.
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <div class="card"
-                style="position: relative; display:inline-block; margin-bottom:30px;height: 313px;margin-left:auto;margin-right:auto;/* position: static; */width: 328px;padding: 10px;background-color: #231f20;">
-                <a href="#myModal" data-toggle="modal"><img class="card-img-top"
-                    style="display: block;margin-left:auto;margin-right:auto;max-width: 300px;padding: 0;"
-                    src="img/carobidform.png" />
-                  <div class="middle">
-                    <div class="text">
-                      <h2 style="font-size:133px;margin-bottom:60px;">+</h2>
+      <div
+        class="row"
+        style="display:block;margin-left:auto; margin-right:auto; max-width: 1230px;"
+      >
+        <div class="col-xs-12" style="height:200px;margin-top:75px;">
+          <img
+            class="col-xs-2"
+            style="width:175px;height:auto;"
+            src="img/_PLANE.gif"
+          />
+          <div class="col-sm-3" style="text-align:left;">
+            <h4>
+              January 2005-
+              <div>
+                October 2011
+              </div>
+            </h4>
+            <h4>
+              Zero to lift off!
+            </h4>
+          </div>
+          <div class="col-sm-8">
+            <div
+              style="text-align:justify;display:block;margin-left:auto; margin-right:auto; max-width: 1230px;"
+            >
+              I coached wrestling, football and baseball at Phillip O'Berry
+              Academy and found great purpose in shaping the scope and vision of
+              young men and future leaders for 5 years. That lead to an
+              opportunity to work for Piedmont Airlines. I was able to travel
+              the globe and be exposed to other cultures. I truly value that
+              time in my life.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row"
+        style="display:block;margin-left:auto; margin-right:auto; max-width: 1230px;"
+      >
+        <div class="col-xs-12" style="height:200px;margin-top:75px;">
+          <img
+            class="col-xs-2"
+            style="width:175px;height:auto;"
+            src="img/camera.png"
+          />
+          <div class="col-sm-3" style="text-align:left;">
+            <h4>
+              November 2011-
+              <div>
+                October 2017
+              </div>
+            </h4>
+            <h4>
+              Lights Camera Reincarnation!
+            </h4>
+          </div>
+          <div class="col-sm-8">
+            <div
+              style="text-align:justify;display:block;margin-left:auto; margin-right:auto; max-width: 1230px;"
+            >
+              I became a freelance photographer and learned design fundamentals
+              such as composition, color theory, cultural significance and more.
+              My pictures even helped models get agency represenation and paid
+              gigs - including my son. He's done commercials, print work and
+              e-commerce for brands such as Belks.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row"
+        style="display:block;margin-left:auto; margin-right:auto; max-width: 1230px;"
+      >
+        <div class="col-xs-12" style="height:200px;margin-top:75px;">
+          <img
+            class="col-xs-2"
+            style="width:175px;height:auto;"
+            src="img/49er.png"
+          />
+          <div class="col-sm-3" style="text-align:left;">
+            <h4>
+              October 2017-
+              <div>
+                February 2018
+              </div>
+            </h4>
+            <h4>
+              Lets talk commitment!
+            </h4>
+          </div>
+          <div class="col-sm-8">
+            <div
+              style="text-align:justify;display:block;margin-left:auto; margin-right:auto; max-width: 1230px;"
+            >
+              The photography industry changed as cellphones replaced the need
+              for certain types of photography. It was time for a new direction.
+              Except it was more like coming home full circle. No yellow
+              footprints this time. I found myself in a different kind of
+              bootcamp that required complete commitment. February 2018, I
+              successfully completed the coding bootcamp offered at
+              UNC-Charlotte. From Hello World to making fire in 90 days.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="portfolio">
+        <!--<div class="col-xs-12" style="height:250px; padding-top:70px;-->
+        <!--background-image: -webkit-linear-gradient(top left,  #30CFD0 0%, #330867 100%);-->
+        <!---webkit-background-clip: text;-webkit-text-fill-color: transparent;">-->
+        <div
+          class="col-xs-12"
+          style="margin-top:162px; padding-top: 50px; background-image: -webkit-linear-gradient(top left,  #30CFD0 0%, #330867 100%);"
+        >
+          <div>
+            <h2
+              style="font-size: 40px; color:white; padding-bottom:130px;padding-top: 100px;"
+            >
+              <i style="letter-spacing: 3px;">portFOLIO</i>
+            </h2>
+            <div
+              class="row"
+              style="display:block;margin-left:auto; margin-right:auto; max-width: 1280px;"
+            >
+              <div class="col-sm-12">
+                <div
+                  class="card"
+                  style="position: relative; display:inline-block; margin-bottom:30px;height: 313px;margin-left:auto;margin-right:auto;/* position: static; */width: 328px;padding: 10px;background-color: #231f20;"
+                >
+                  <a href="#myModal" data-toggle="modal"
+                    ><img
+                      class="card-img-top"
+                      style="display: block;margin-left:auto;margin-right:auto;max-width: 300px;padding: 0;"
+                      src="img/carobidform.png"
+                    />
+                    <div class="middle">
+                      <div class="text">
+                        <h2 style="font-size:133px;margin-bottom:60px;">+</h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <div
+                    class="card-body"
+                    style="display: block;margin-left:auto;margin-right:auto;width: 300px;padding: 0; color:#f6da84"
+                  >
+                    <h4 class="card-title">Carolinian Bid Form</h4>
+                    <p class="card-text">Full stack, graphic designer,</p>
+                    <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+                  </div>
+                </div>
+
+                <!--<div class="card col-sm-3" style="margin-left:auto; margin-right:auto; width:302px; padding: 0; background-color: #f3f0f5"> -->
+                <div
+                  class="card"
+                  style="position: relative; display:inline-block; margin-bottom:30px;height: 313px;margin-left:auto;margin-right:auto;/* position: static; */width: 328px;padding: 10px;background-color: #231f20;"
+                >
+                  <a href="#myModal2" data-toggle="modal"
+                    ><img
+                      class="card-img-top"
+                      style="display: block;margin-left:auto;margin-right:auto;max-width: 300px;padding: 0;"
+                      src="img/flashcard.png"
+                    />
+                    <div class="middle">
+                      <div class="text2">
+                        <h2 style="font-size:133px;margin-bottom:60px;">+</h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <div
+                    class="card-body"
+                    style="display: block;margin-left:auto;margin-right:auto;width: 300px;padding: 0; color: #ed7dff;"
+                  >
+                    <h4 class="card-title">
+                      Flashcard Fun with Multiplication
+                    </h4>
+                    <p class="card-text">Full stack, graphic designer,</p>
+                    <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+                  </div>
+                </div>
+
+                <!--<div class="card container"-->
+                <!--  style="display:inline-block; margin-bottom:30px;height: 313px;margin-left:auto;margin-right:auto;/* position: static; */width: 328px;padding: 10px;background-color: #231f20;">-->
+                <!--  <a href="#myModal3" data-toggle="modal"><img class="card-img-top" -->
+                <!--      style="display: block;margin-left:auto;margin-right:auto;max-width: 300px;padding: 0;" -->
+                <!--      src="img/uiashley.png" />-->
+                <!--      <div class="middle">-->
+                <!--          <div class="text2">-->
+                <!--            <h2 style="font-size:133px;margin-bottom:60px;">+</h2>-->
+                <!--          </div>-->
+                <!--    </div>-->
+                <!--  </a>-->
+                <!--  <div class="card-body"-->
+                <!--    style="display:block; margin-left:auto; margin-right:auto; width:300px; padding:0; color: #38a3bc;">-->
+                <!--    <h4 class="card-title">Unbounded Images</h4>-->
+                <!--    <p class="card-text">Full stack, Photographer, </p>-->
+                <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+                <!--  </div>-->
+                <!--</div>-->
+
+                <div
+                  class="card"
+                  style="position: relative; display:inline-block; margin-bottom:30px;height: 313px;margin-left:auto;margin-right:auto;/* position: static; */width: 328px;padding: 10px;background-color: #231f20;"
+                >
+                  <a href="#myModal3" data-toggle="modal"
+                    ><img
+                      class="card-img-top"
+                      style="display: block;margin-left:auto;margin-right:auto;max-width: 300px;padding: 0;"
+                      src="img/uiashley.png"
+                    />
+                    <div class="middle">
+                      <div class="text3">
+                        <h2 style="font-size:133px;margin-bottom:60px;">+</h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <div
+                    class="card-body"
+                    style="display: block;margin-left:auto;margin-right:auto;width: 300px;padding: 0; color: #38a3bc;"
+                  >
+                    <h4 class="card-title">Unbounded Images</h4>
+                    <p class="card-text">Front End Developer, Photographer,</p>
+                    <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+                  </div>
+                </div>
+
+                <div
+                  class="card"
+                  style="position: relative; display:inline-block; margin-bottom:30px;height: 313px;margin-left:auto;margin-right:auto;/* position: static; */width: 328px;padding: 10px;background-color: #231f20;"
+                >
+                  <a href="#myModal4" data-toggle="modal"
+                    ><img
+                      class="card-img-top"
+                      style="display: block;margin-left:auto;margin-right:auto;max-width: 300px;padding: 0;"
+                      src="img/unboundedimages.png"
+                    />
+                    <div class="middle">
+                      <div class="text4">
+                        <h2 style="font-size:133px;margin-bottom:60px;">+</h2>
+                      </div>
+                    </div>
+                  </a>
+                  <div
+                    class="card-body"
+                    style="display:block; margin-left:auto; margin-right:auto; width:300px; padding:0; color: #9ec0c5;"
+                  >
+                    <h4 class="card-title">Modeling page</h4>
+                    <p class="card-text">
+                      Full stack, Photographer, Graphic Designer,
+                    </p>
+                    <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="height:70px"></div>
+
+          <div
+            class="modal"
+            id="myModal"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-full" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="height:250px">
+                  <span aria-hidden="true">
+                    <div class="col-xs-10"></div>
+                    <a
+                      class="btn-secondary col-xs-1"
+                      data-dismiss="modal"
+                      style="margin-top:46px; padding:0; max-width:43px; font-size:42px; cursor:pointer;"
+                    >
+                      &times;
+                    </a>
+                  </span>
+                  <h2
+                    class="modal-title col-xs-12"
+                    style="padding-top:15px;text-transform: uppercase;"
+                  >
+                    Caro Bid Form
+                  </h2>
+                  <h4 class="col-xs-12" style="color:#5c6264">
+                    <i>Submit your bid advertisement online and save time</i>
+                  </h4>
+                </div>
+                <div class="modal-body p-4" id="result">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <!--<div class="col-xs-3"></div>-->
+                      <a href="https://www.carobids.com" target="_blank">
+                        <img
+                          style="display:block; margin-left:auto; margin-right: auto; max-width: 90%;"
+                          src="img/carobidform.png"
+                        />
+                      </a>
+                      <div class="col-xs-3"></div>
                     </div>
                   </div>
-                </a>
-
-                <div class="card-body"
-                  style="display: block;margin-left:auto;margin-right:auto;width: 300px;padding: 0; color:#f6da84">
-                  <h4 class="card-title">Carolinian Bid Form</h4>
-                  <p class="card-text">Full stack, graphic designer, </p>
-                  <!--<a href="#" class="btn btn-primary">See Profile</a>-->
                 </div>
-              </div>
-
-
-
-              <!--<div class="card col-sm-3" style="margin-left:auto; margin-right:auto; width:302px; padding: 0; background-color: #f3f0f5"> -->
-              <div class="card"
-                style="position: relative; display:inline-block; margin-bottom:30px;height: 313px;margin-left:auto;margin-right:auto;/* position: static; */width: 328px;padding: 10px;background-color: #231f20;">
-                <a href="#myModal2" data-toggle="modal"><img class="card-img-top"
-                    style="display: block;margin-left:auto;margin-right:auto;max-width: 300px;padding: 0;"
-                    src="img/flashcard.png" />
-                    <div class="middle">
-                        <div class="text2">
-                          <h2 style="font-size:133px;margin-bottom:60px;">+</h2>
-                        </div>
+                <div class="modal-footer">
+                  <div class="col-xs-12">
+                    <div
+                      style="display:block;max-width: 84%;margin-left:auto;margin-right:auto;text-align:justify;"
+                    >
+                      Simplify the process of submitting bid advertisements with
+                      just a few clicks. You will be able to secure the dates
+                      you want your advertisments to run and even process your
+                      payment securely online.
+                    </div>
                   </div>
-                </a>
-                
-                <div class="card-body"
-                  style="display: block;margin-left:auto;margin-right:auto;width: 300px;padding: 0; color: #ed7dff;">
-                  <h4 class="card-title">Flashcard Fun with Multiplication</h4>
-                  <p class="card-text">Full stack, graphic designer, </p>
-                  <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    OK
+                  </button>
                 </div>
               </div>
-
-              <!--<div class="card container"-->
-              <!--  style="display:inline-block; margin-bottom:30px;height: 313px;margin-left:auto;margin-right:auto;/* position: static; */width: 328px;padding: 10px;background-color: #231f20;">-->
-              <!--  <a href="#myModal3" data-toggle="modal"><img class="card-img-top" -->
-              <!--      style="display: block;margin-left:auto;margin-right:auto;max-width: 300px;padding: 0;" -->
-              <!--      src="img/uiashley.png" />-->
-              <!--      <div class="middle">-->
-              <!--          <div class="text2">-->
-              <!--            <h2 style="font-size:133px;margin-bottom:60px;">+</h2>-->
-              <!--          </div>-->
-              <!--    </div>-->
-              <!--  </a>-->
-              <!--  <div class="card-body"-->
-              <!--    style="display:block; margin-left:auto; margin-right:auto; width:300px; padding:0; color: #38a3bc;">-->
-              <!--    <h4 class="card-title">Unbounded Images</h4>-->
-              <!--    <p class="card-text">Full stack, Photographer, </p>-->
-                  <!--<a href="#" class="btn btn-primary">See Profile</a>-->
-              <!--  </div>-->
-              <!--</div>-->
-              
-              <div class="card"
-                style="position: relative; display:inline-block; margin-bottom:30px;height: 313px;margin-left:auto;margin-right:auto;/* position: static; */width: 328px;padding: 10px;background-color: #231f20;">
-                <a href="#myModal3" data-toggle="modal"><img class="card-img-top"
-                    style="display: block;margin-left:auto;margin-right:auto;max-width: 300px;padding: 0;"
-                    src="img/uiashley.png" />
-                    <div class="middle">
-                        <div class="text3">
-                          <h2 style="font-size:133px;margin-bottom:60px;">+</h2>
-                        </div>
-                  </div>
-                </a>
-                
-                <div class="card-body"
-                  style="display: block;margin-left:auto;margin-right:auto;width: 300px;padding: 0; color: #38a3bc;">
-                  <h4 class="card-title">Unbounded Images</h4>
-                  <p class="card-text">Front End Developer, Photographer, </p>
-                  <!--<a href="#" class="btn btn-primary">See Profile</a>-->
-                </div>
-              </div>
-
-              <div class="card"
-                style="position: relative; display:inline-block; margin-bottom:30px;height: 313px;margin-left:auto;margin-right:auto;/* position: static; */width: 328px;padding: 10px;background-color: #231f20;">
-                <a href="#myModal4" data-toggle="modal"><img class="card-img-top" 
-                style="display: block;margin-left:auto;margin-right:auto;max-width: 300px;padding: 0;"
-                    src="img/unboundedimages.png" />
-                  <div class="middle">
-                        <div class="text4">
-                          <h2 style="font-size:133px;margin-bottom:60px;">+</h2>
-                        </div>
-                  </div>
-                </a>
-                <div class="card-body"
-                  style="display:block; margin-left:auto; margin-right:auto; width:300px; padding:0; color: #9ec0c5;">
-                  <h4 class="card-title">Modeling page</h4>
-                  <p class="card-text">Full stack, Photographer, Graphic Designer, </p>
-                  <!--<a href="#" class="btn btn-primary">See Profile</a>-->
-                </div>
-              </div>
-
             </div>
           </div>
-        </div>
 
-        <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-full" role="document">
-            <div class="modal-content">
-              <div class="modal-header" style="height:250px">
+          <div
+            class="modal"
+            id="myModal2"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-full" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="height:250px">
                   <span aria-hidden="true">
-                  <div class="col-xs-10"></div>
-                  <a class="btn-secondary col-xs-1" data-dismiss="modal"
-                    style="margin-top:46px; padding:0; max-width:43px; font-size:42px; cursor:pointer;">
-                    &times;
-                  </a>
-                </span>
-                <h2 class="modal-title col-xs-12" style="padding-top:15px;text-transform: uppercase;">
-                  Caro Bid Form
-                </h2>
-                <h4 class="col-xs-12" style="color:#5c6264">
-                    <i>Submit your bid advertisement online and save time</i>
-                </h4>
-                
-              </div>
-              <div class="modal-body p-4" id="result">
-                <div class="row">
+                    <div class="col-xs-10"></div>
+                    <a
+                      class="btn-secondary col-xs-1"
+                      data-dismiss="modal"
+                      style="margin-top:46px; padding:0; max-width:43px; font-size:42px; cursor:pointer;"
+                    >
+                      &times;
+                    </a>
+                  </span>
+                  <h2
+                    class="modal-title col-xs-12"
+                    style="padding-top:15px;text-transform: uppercase;"
+                  >
+                    Flashcard Fun
+                  </h2>
+
+                  <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                  <!--    <span aria-hidden="true">×</span>-->
+                  <!--</button>-->
+
+                  <p class="modal-title col-xs-12">
+                    <i style="color:#8e9091">
+                      A fun game that helps build multiplication logic.
+                    </i>
+                  </p>
+                </div>
+                <div class="modal-body p-4" id="result">
+                  <div class="row">
+                    <div
+                      class="col-xs-12"
+                      style="padding-left: 0; padding-right: 0;margin: 0;"
+                    >
+                      <div class="col-xs-1"></div>
+                      <a
+                        href="https://flashcardfun.herokuapp.com"
+                        target="_blank"
+                      >
+                        <img class="col-xs-10" src="img/flashcard.png" />
+                      </a>
+                      <div class="col-xs-1"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
                   <div class="col-xs-12">
-                    <!--<div class="col-xs-3"></div>-->
-                    <a href="https://www.carobids.com" target="_blank">
-                      <img style="display:block; margin-left:auto; margin-right: auto; max-width: 90%;"
-                        src="img/carobidform.png" />
-                    </a>
-                    <div class="col-xs-3"></div>
+                    <!--<div class="col-xs-2"></div>-->
+                    <div
+                      style="display:block;max-width: 84%;margin-left:auto;margin-right:auto;text-align:justify;"
+                    >
+                      I made this fun app to teach my small children how to
+                      multiply. Instead of having index cards all over the
+                      floor, this both taught them how to mulitply and keep our
+                      livingroom floor clean. The challenge I game myself was to
+                      make it as lightweight as possible, with no frameworks. I
+                      made custom sounds, experimented with Adobe Illustrator,
+                      and researched the benefits of studying math logic with
+                      classical music to engage both the left and right brain.
+                      Best of all, the kids love it.
+                      <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      OK
+                    </button>
+                    <!--<div class="col-xs-2"></div>-->
                   </div>
                 </div>
               </div>
-              <div class="modal-footer">
+            </div>
+          </div>
+
+          <div
+            class="modal"
+            id="myModal3"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-full" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="height:250px">
+                  <span aria-hidden="true">
+                    <div class="col-xs-10"></div>
+                    <a
+                      class="btn-secondary col-xs-1"
+                      data-dismiss="modal"
+                      style="margin-top:46px; padding:0; max-width:43px; font-size:42px; cursor:pointer;"
+                    >
+                      &times;
+                    </a>
+                  </span>
+                  <h2
+                    class="modal-title col-xs-12"
+                    style="padding-top:15px;text-transform: uppercase;"
+                  >
+                    Unbounded Images
+                  </h2>
+
+                  <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                  <!--    <span aria-hidden="true">×</span>-->
+                  <!--</button>-->
+
+                  <p class="modal-title col-xs-12">
+                    <i style="color:#8e9091">
+                      My photography portfolio!
+                    </i>
+                  </p>
+                </div>
+                <div class="modal-body p-4" id="result">
+                  <div class="row">
+                    <div
+                      class="col-xs-12"
+                      style="padding-left: 0; padding-right: 0;margin: 0;"
+                    >
+                      <div class="col-xs-1"></div>
+                      <a
+                        href="https://www.unboundedimages.com/monochrome"
+                        target="_blank"
+                      >
+                        <img class="col-xs-10" src="img/uiashley.png" />
+                      </a>
+                      <div class="col-xs-1"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
                   <div class="col-xs-12">
-                      <div style="display:block;max-width: 84%;margin-left:auto;margin-right:auto;text-align:justify;">
-                           Simplify the process of submitting bid advertisements with just a few clicks.  
-                      You will be able to secure the dates you want your advertisments to run and 
-                      even process your payment securely online.  
-                      </div>
+                    <!--<div class="col-xs-2"></div>-->
+                    <div
+                      style="display:block;max-width: 84%;margin-left:auto;margin-right:auto;text-align:justify;"
+                    >
+                      This was actually the first website I've published. When
+                      the industry required an online pressence, I needed a way
+                      to display some of my best images, and provide a means for
+                      potential clients to reach me and be mobile responses.
+                      Aside from taking all the photography, I came up with the
+                      color platte that best suited the images selected. This
+                      was the first site I built. At the time I used wix only
+                      later to realize it was built using REACT components. If
+                      it's not broke why fix it? I keep the site as benchmark
+                      and to appreciate transition and growth.
+                      <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      OK
+                    </button>
+                    <!--<div class="col-xs-2"></div>-->
                   </div>
-                 
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-full" role="document">
-            <div class="modal-content">
-              <div class="modal-header" style="height:250px">
-                <span aria-hidden="true">
-                  <div class="col-xs-10"></div>
-                  <a class="btn-secondary col-xs-1" data-dismiss="modal"
-                    style="margin-top:46px; padding:0; max-width:43px; font-size:42px; cursor:pointer;">
-                    &times;
-                  </a>
-                </span>
-                <h2 class="modal-title col-xs-12" style="padding-top:15px;text-transform: uppercase;">
-                  Flashcard Fun
-                </h2>
-
-                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                <!--    <span aria-hidden="true">×</span>-->
-                <!--</button>-->
-
-                <p class="modal-title col-xs-12">
-                  <i style="color:#8e9091">
-                    A fun game that helps build multiplication logic.
-                  </i>
-                </p>
-              </div>
-              <div class="modal-body p-4" id="result">
-                <div class="row">
-                  <div class="col-xs-12" style="padding-left: 0; padding-right: 0;margin: 0;">
-                    <div class="col-xs-1"></div>
-                    <a href="https://flashcardfun.herokuapp.com" target="_blank">
-                      <img class="col-xs-10" src="img/flashcard.png" />
-                    </a>
-                    <div class="col-xs-1"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <div class="col-xs-12">
-                  <!--<div class="col-xs-2"></div>-->
-                  <div style="display:block;max-width: 84%;margin-left:auto;margin-right:auto;text-align:justify;">
-                    I made this fun app to teach my small children how to
-                    multiply. Instead of having index cards all over the
-                    floor, this both taught them how to mulitply and keep our
-                    livingroom floor clean. The challenge I game myself was
-                    to make it as lightweight as possible, with no frameworks.
-                    I made custom sounds, experimented with Adobe Illustrator,
-                    and researched the benefits of studying math logic with
-                    classical music to engage both the left and right brain.
-                    Best of all, the kids love it.
-                    <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
-                  </div>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
-                  <!--<div class="col-xs-2"></div>-->
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        
-        <div class="modal" id="myModal3" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-full" role="document">
-            <div class="modal-content">
-              <div class="modal-header" style="height:250px">
-                <span aria-hidden="true">
-                  <div class="col-xs-10"></div>
-                  <a class="btn-secondary col-xs-1" data-dismiss="modal"
-                    style="margin-top:46px; padding:0; max-width:43px; font-size:42px; cursor:pointer;">
-                    &times;
-                  </a>
-                </span>
-                <h2 class="modal-title col-xs-12" style="padding-top:15px;text-transform: uppercase;">
-                  Unbounded Images
-                </h2>
 
-                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                <!--    <span aria-hidden="true">×</span>-->
-                <!--</button>-->
-
-                <p class="modal-title col-xs-12">
-                  <i style="color:#8e9091">
-                    My photography portfolio!
-                  </i>
-                </p>
-              </div>
-              <div class="modal-body p-4" id="result">
-                <div class="row">
-                  <div class="col-xs-12" style="padding-left: 0; padding-right: 0;margin: 0;">
-                    <div class="col-xs-1"></div>
-                    <a href="https://www.unboundedimages.com/monochrome" target="_blank">
-                      <img class="col-xs-10" src="img/uiashley.png" />
-                    </a>
-                    <div class="col-xs-1"></div>
+          <div
+            class="modal"
+            id="myModal4"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-full" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="height:250px">
+                  <h3
+                    class="modal-title col-xs-11"
+                    style="padding-top: 75px;text-align:center;"
+                  >
+                    Model Page
+                  </h3>
+                  <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                  <!--    <span aria-hidden="true">×</span>-->
+                  <!--</button>-->
+                  <span aria-hidden="true">
+                    <a
+                      class="btn-secondary col-xs-1"
+                      data-dismiss="modal"
+                      style="margin-top:70px; text-align:center; font-size:30px; cursor:pointer;"
+                    >
+                      &times;</a
+                    >
+                  </span>
+                </div>
+                <div class="modal-body p-4" id="result">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="col-xs-3"></div>
+                      <a
+                        href="https://unboundedimages.com/monochrome"
+                        target="_blank"
+                      >
+                        <img
+                          class="col-xs-6"
+                          style="max-width:600px;min-width:400px; padding-right:30px;"
+                          src="img/unboundedimages.png"
+                        />
+                      </a>
+                      <div class="col-xs-3"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <div class="col-xs-12">
-                  <!--<div class="col-xs-2"></div>-->
-                  <div style="display:block;max-width: 84%;margin-left:auto;margin-right:auto;text-align:justify;">
-                    This was actually the first website I've published.  When the industry required an online pressence,
-                   I needed a way to display some of my best images, and provide a means for potential clients to reach me and be mobile responses.  
-                   Aside from taking all the photography, I came up with the color platte that best suited the images selected.  
-                   This was the first site I built.  At the time I used wix only later to realize it was built using REACT components.  
-                   If it's not broke why fix it?  I keep the site as benchmark and to appreciate transition and growth.
-                    <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
-                  </div>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
-                  <!--<div class="col-xs-2"></div>-->
+                <div class="modal-footer">
+                  <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-        
-        
-        
-        <div class="modal" id="myModal4" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-full" role="document">
-            <div class="modal-content">
-              <div class="modal-header" style="height:250px">
-                <h3 class="modal-title col-xs-11" style="padding-top: 75px;text-align:center;">
-                  Model Page
-                </h3>
-                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                <!--    <span aria-hidden="true">×</span>-->
-                <!--</button>-->
-                <span aria-hidden="true">
-                  <a class="btn-secondary col-xs-1" data-dismiss="modal"
-                    style="margin-top:70px; text-align:center; font-size:30px; cursor:pointer;">
-                    &times;</a>
-                </span>
-              </div>
-              <div class="modal-body p-4" id="result">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-xs-3"></div>
-                    <a href="https://unboundedimages.com/monochrome" target="_blank">
-                      <img class="col-xs-6" style="max-width:600px;min-width:400px; padding-right:30px;"
-                        src="img/unboundedimages.png" />
-                    </a>
-                    <div class="col-xs-3"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>-->
-              </div>
+      </div>
+      <div class="row" id="experience">
+        <div class="col-xs-12">
+          <h2
+            style="font-size: 40px; color:#25488d; padding-bottom:0px;padding-top: 100px;"
+          >
+            <i style="letter-spacing: 3px; text-transform: uppercase;"
+              >Experience</i
+            >
+          </h2>
+          <h4 class="col-xs-12" style="color:#2e84ad;margin-bottom: 60px;">
+            <i
+              >Here's a list of technologies and frameworks I've worked with.</i
+            >
+          </h4>
+        </div>
+
+        <div class="col-xs-12" style="height:40px;"></div>
+
+        <div class="col-sm-12 ">
+          <!--<span class="devicons devicons-nodejs largify" style="font-size: 75px;"></span>-->
+          <div class="row">
+            <div
+              class="fab fa-node col-sm-3"
+              style="font-size: 110px; display:block; margin-left:auto; margin-right:auto; margin-bottom: 40px;"
+            ></div>
+            <!--<div class="fab fa-js col-sm-3" style="font-size: 130px; display:block; margin-left:auto; margin-right:auto; margin-bottom: 40px;">-->
+
+            <!--</div>-->
+            <div class="col-sm-3">
+              <img
+                src="img/js-icon.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/jQuery.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/bootstrap.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="col-sm-3">
+              <img
+                src="img/css3.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/html.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/react.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/ps.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="col-sm-3">
+              <img
+                src="img/capture1bg.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/ubuntu-black.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/nginx.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/github.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="col-sm-3">
+              <img
+                src="img/npm.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/mysql.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
+            </div>
+            <div class="col-sm-3">
+              <img
+                src="img/Gimp.png"
+                style="max-height:110px; margin-bottom: 40px;"
+              />
             </div>
           </div>
         </div>
-        
-        
+      </div>
+
+      <div class="row">
+        <div
+          class="col-xs-12"
+          id="contact"
+          style="display:block; margin-top:100px; background-image:url(img/handshake.jpg);background-repeat: no-repeat; background-size: cover;/*background-size: 100%;*/"
+        >
+          <h2 class="col-xs-12" style="text-transform:uppercase;color:#effcfd">
+            Have a project or questions? Contact me!
+          </h2>
+          <h4 style="color:#effcfd">
+            Lets talk!
+          </h4>
+          <!--<form>-->
+          <!--    <div class="row" style='max-width:800px;margin-left:auto; margin-right:auto;margin-top:40px;'>-->
+          <!--      <div class="col-xs-6">-->
+          <!--        <input type="text" class="form-control" placeholder="First name">-->
+          <!--      </div>-->
+          <!--      <div class="col-xs-6">-->
+          <!--        <input type="text" class="form-control" placeholder="Last name">-->
+          <!--      </div>-->
+          <!--       <textarea class="col-xs-12" rows="7" style="max-width: 800px;display:block; margin-left:auto; margin-right: auto;    margin-top: 30px;"></textarea>-->
+          <!--    </div>-->
+          <!--  </form>-->
+
+          <form style="padding:15px; margin-bottom: 80px;">
+            <div
+              class="row"
+              style="max-width:800px;margin-left:auto; margin-right:auto;margin-top:40px;"
+            >
+              <div class="col-xs-4" rows="4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                  style="background: #000000c4; color: #46cacf;"
+                />
+              </div>
+              <div class="col-xs-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                  style="background: #000000c4; color: #46cacf;"
+                />
+              </div>
+              <div class="col-xs-4">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="email"
+                  style="background: #000000c4; color: #46cacf;"
+                />
+              </div>
+              <textarea
+                placeholder="Connect with me and lets talk about your next up and coming project, or lets just talk shop about coding!"
+                class="col-xs-12"
+                rows="7"
+                style="max-width: 800px;display:block; margin-left:auto; margin-right: auto; margin-top: 30px; margin-bottom: 30px;background: #000000c4; color: #46cacf;"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-info"
+              style="font-size:13pt; /*background-color:#3cafc2;*/ border-color:#47cdd0;"
+            >
+              Send
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
